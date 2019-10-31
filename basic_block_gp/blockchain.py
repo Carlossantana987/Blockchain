@@ -53,7 +53,7 @@ class Blockchain(object):
         block_string = string_object.encode()
         # TODO: Hash this string using sha256
         raw_hash = hashlib.sha256(block_string)
-        hex_hash = raw_hash.hexdigest()3
+        hex_hash = raw_hash.hexdigest()
         # By itself, the sha256 function returns the hash in a raw string
         # that will likely include escaped characters.
         # This can be hard to read, but .hexdigest() converts the
